@@ -66,9 +66,9 @@ for(let speed of speedOptions){
         if(tempspeed === 'Slow'){
             currentSpeed = 15;
         }else if(tempspeed == 'Medium'){
-            currentSpeed = 1;
+            currentSpeed = 7;
         }else{
-            currentSpeed = 3;
+            currentSpeed = 2;
         }
         console.log(currentSpeed);
         wrapUp(speeds, '.dropdown-speeds');
