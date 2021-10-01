@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Path Finder</title>
+</head>
+<body>
+    
+    <div class="nav-bar">
+        <div class="name">
+            <p>Pathfinding Visualizer</p>
+            <div class="dropdown-algorithms">
+                <div class="dropdown-view dropdown-container" id="selectAlgorithms">
+                    <p id="displayAlgorithms">Dijkstra's algorithm</p>
+                    <i class="fi-rr-caret-down down"></i>
+                    <i class="fi-rr-caret-up up hide"></i>
+                </div>
+                <div class="dropdown-options hide" id="algorithms">
+                    <div class="dropdown-container algoOptions">
+                        <p>Dijkstra's algorithm</p>
+                    </div>
+                    <!-- <div class="dropdown-container algoOptions">
+                        <p>DFS algorithm</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="dropdown-speeds">
+                <div class="dropdown-view dropdown-container" id="selectSpeeds">
+                    <p id="displayAlgorithms">Fast</p>
+                    <i class="fi-rr-caret-down down"></i>
+                    <i class="fi-rr-caret-up up hide"></i>
+                </div>
+                <div class="dropdown-options hide" id="speeds">
+                    <div class="dropdown-container speedOptions">
+                        <p>Slow</p>
+                    </div>
+                    <div class="dropdown-container speedOptions">
+                        <p>Medium</p>
+                    </div>
+                    <div class="dropdown-container speedOptions">
+                        <p>Fast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="color-nav">
+        <div class="color-info">
+            <div class="color-box wall"></div>
+            <p>Wall</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box start"></div>
+            <p>Start</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box target"></div>
+            <p>Target</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box searching"></div>
+            <p>Searching</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box visited"></div>
+            <p>Visited</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box shortest-path"></div>
+            <p>Shortest-Path</p>
+        </div>
+        <div class="color-info">
+            <div class="color-box unvisited"></div>
+            <p>Unvisited</p>
+        </div>
+    </div>
+    <div class="message-nav">
+        <p>*The shortest path displayed is on the basis of the number of cell transitions.</p>
+    </div>
+
+
+    <div class="container">
+        <div class="grid">
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

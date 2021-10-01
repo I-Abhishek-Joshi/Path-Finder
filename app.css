@@ -1,0 +1,191 @@
+body, div, button, p, i{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    min-width: 700px;
+    
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: rgb(52,58,64);
+    position: sticky;
+    color: white;
+    top: 0;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .name p{
+    font-size: 25px;
+} */
+.options-menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 5px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.options-menu p{
+    font-size: 15px;
+}
+.algo-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fi-rr-caret-down{
+    font-size: 15px;
+    margin-left: 2px;
+}
+
+/******************************************/
+.dropdown-algorithms, .dropdown-speeds{
+    text-align: left;
+    position: relative;
+    margin: 0 10px;
+    color: white !important;
+    
+}
+.dropdown-options{
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.dropdown-container{
+    width: 200px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.algoOptions:hover, .speedOptions:hover{
+    background-color: rgb(52,58,64);
+    color: white;
+}
+.dropdown-view{
+    display: flex;
+    justify-content: space-between;
+}
+.hide{
+    display: none;
+}
+
+/*********************************************/
+.btn{
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.color-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #c9d1cc;
+}
+.color-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.color-box{
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+    border-radius: 3px;
+}
+.wall{ background-color: #262B28;}
+.start{ background-color: #008000;}
+.target{ background-color: #FF0000;}
+.searching{ background-color: #1CD4B5;}
+.visited{ background-color: #E89440;}
+.shortest-path{ background-color: #FFEE31;}
+.unvisited{ border: 1px solid red; background-color: rgb(165, 162, 157);}
+
+.message-nav{
+    background: #FFEE31;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    padding: 25px 0;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    background-color: cadetblue;
+}
+.row{
+    height: 25px;
+    background-color: chocolate;
+    display: flex;
+}
+.box{
+    background-color: rgb(165, 162, 157);
+    width: 25px;
+    height: 100%;
+    border: 0.01rem solid red;
+    flex: 1;
+}
+.start{
+    background-color: #008000;
+    cursor: grab;
+}
+.target{
+    background-color: #FF0000;
+    cursor: grab;
+}
+.temp{
+    background-color: teal;
+}
+.wall{
+    background-color: #262B28;
+}
+
+.boxVisited{
+    background-color: #E89440;
+}
+.boxSearching{
+    background-color: #1CD4B5;
+}
+.boxShortestPath{
+    background-color: #FFEE31;
+}
+
+
+
+@media(max-width: 768px){
+    body, p, .btn{
+        font-size: 10px;
+    }
+    .row{
+        height: 20px;
+    }
+    .box{
+        width: 20px;
+    }
+    .nav-bar{
+        overflow-x: scroll;
+    }
+}
